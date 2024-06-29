@@ -59,11 +59,11 @@ public class Util {
 
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                     .applySettings(configuration.getProperties()).build();
-            System.out.println("ok");
+            //System.out.println("ok");
 
             sessionFactory = configuration.buildSessionFactory(serviceRegistry);
         } catch (Exception e) {
-            System.out.println("ne ok");
+            //System.out.println("ne ok");
             e.printStackTrace();
         }
     }
